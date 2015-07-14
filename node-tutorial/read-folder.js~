@@ -1,0 +1,26 @@
+var files = fs.readdirSync(folderName); 
+	var productList = []; 
+
+	files.forEach(function (fileName) { 
+		//console.log("file : " + fileName ); 
+		//how do I see wha tis inside of a file? 
+		var fileContent = fs.readFileSync(folderName + "/" + fileName, 'utf8'); 
+		var products = fileContent.split("\n"); 
+		 
+		products.forEach(function(product){ 
+			console.log(product); 
+			productList.push(product); 
+		}); 
+			 
+		//console.log("--------------")	 
+	}); 
+
+	//console.log(productList); 
+    return productList; 
+};
+
+
+
+
+
+
