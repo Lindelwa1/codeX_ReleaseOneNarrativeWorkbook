@@ -1,0 +1,29 @@
+var assert = require('assert');
+var findProducts = function(fileName){
+	fs.readFile('./files/products.csv',function(err,data){
+		var ProductNames = [];
+		var products = require("../products");
+		productListforEach(function(product){
+			productList.push[products];
+ 		});
+	});
+};
+
+
+
+
+module.exports = function(){
+
+	this.productNames = function(cb){
+		cb(null, []);
+
+	};
+
+
+	this.productsSold = function(cb){
+		cb(null, []);
+
+	};
+
+
+}

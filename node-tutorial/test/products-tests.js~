@@ -7,8 +7,8 @@ describe("Find data in file", function(){
 
         var Products = require("../products");
         var products = new Products('./files/products.csv');
-        products.productNames(function(err, products ){
-            assert.deepEqual(["Milk", "Bread", "Coffee"], products);
+        products.productNames(function(err, products){
+            assert.deepEqual(products,["Milk", "Bread", "Coffee"]);
 
             done();
         });
